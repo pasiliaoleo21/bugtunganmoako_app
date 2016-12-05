@@ -1,0 +1,298 @@
+body {
+    font-family: Helvetica Neue, Arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    color: #444;
+    line-height: 1.4;
+    background: url(images/du30.png);
+
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+section {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+	margin: 20px auto;
+	width: 780px;
+	background-color: transparent;
+    min-height: 430px;
+    border-radius: 4px;
+}
+
+.hide {
+    display: none !important;
+}
+
+
+body{
+	background:url(images/GameOver.png) no-repeat center ;
+	background-attachment: cover;
+	color:#006064;
+}
+header{
+	height:50px;
+	padding:20px;
+	font-size: 30px;
+	text-align: center;
+}
+header h2{
+	font-size: 18px;
+}
+.startSection {
+	margin-top: 60px;
+	text-align: center;
+	margin-left: 200px;
+}
+.intro{
+	font-size: 12px;
+	padding: 10px 20px;
+	    border-bottom: 1px solid #CCC;
+}
+.intro span{
+	padding: 4px;
+}
+
+.date{
+	display: inline-block;
+	float: right;
+}
+
+footer{
+	color:black;
+	bottom: 0px;
+	position: fixed;
+	width: 100%;
+	height: 20px;
+	font-size: 10px;
+	text-align: center;
+}
+
+.btn {
+    border: none;
+    color: #ffffff;
+    display: inline-block;
+    float: none;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 39px;
+    outline: none;
+    padding: 6px 40px 6px 40px;
+    text-shadow: none;
+    margin: 20px 0 0 0;
+    width: auto;
+    white-space: nowrap;
+    background-color: #d85f7f;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+	background-color: #ba4564;
+	background-position: 28px -9px;
+}
+
+.start {
+    transition: background-position 0.5s ease;
+    background: #d85f7f url(images/plane.png) no-repeat 14px 9px;
+    padding: 14px 40px 12px 75px;
+}
+
+.bar {
+    border-radius: 0px;
+    background: #01c37b;
+    display: block;
+    height: 10px;
+    width: 100%;
+    transition: width 0.5s ease !important;
+}
+
+.progress {
+    background: #ff1200;
+    height: 10px;
+    padding: 0px;
+}
+
+.questions{
+	padding:20px;
+	background-color: #ff3;
+}
+.displayquestions{
+	font-size: 20px;
+}
+
+.displayquestions p{
+	margin: 10px;
+}
+
+.displayquestions ul{
+	list-style: none;
+	margin: 0;
+    padding: 10px;
+}
+
+.displayquestions ul li {
+	margin:0;
+	padding:0;
+}
+
+.displayquestions ul label{
+	background:#BDBDBD;
+	padding: 10px;
+	width: 500px;
+	margin: 0px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	display: block;
+	cursor: pointer;
+}
+
+.displayquestions ul li input[type=radio]{
+	display: none;
+}
+
+.displayquestions input[type=radio]:checked + label {
+	background:#00695C;
+	color: #fff;
+}
+
+.displayquestions p input{
+	width: 300px;
+	margin: 20px 0px 50px 0px;
+	border-radius: 5px;
+	height: 50px;
+	font-size: 15px;
+	border: 1px solid #ccc;
+}
+
+
+#scoreSection{
+	font-size: 12px;
+	border-bottom: solid #00695C;
+	clear: both;
+	padding: 10px 20px;
+	background-color: #ddf;
+}
+.scoreBlock{
+	font-size: 25px;
+	text-align: center;	
+}
+.scoreBlock:after {
+    display: block;
+    content: ' ';
+    clear: both;
+}
+
+
+.right{
+	display: inline-block;
+	float: left;
+}
+
+.wrong{
+	display: inline-block;
+	float: right;
+}
+
+#right, #wrong {
+	display: inline-block;
+    color: #fff;
+	border-radius: 5px;
+    padding: 2px 7px;
+}
+
+#right {
+	background: #01c37b;
+}
+
+#wrong {
+	background: #ff1200;
+}
+
+.displayquestions ul label:hover{
+	background:#00695C;
+	color: white;
+}
+
+.buttons{
+    background: #26A69A;
+    height: 50px;
+    margin-right: 20px;
+    width: 200px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons:hover{
+	background:#00695C;
+	color: #E8F5E9;
+}
+
+.buttonContainer{
+	margin: 20px 0 0 10px;
+}
+
+
+/* mobiles Portrait and Landscape */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
+	
+	body {
+		background: url(images/GameOver.png);
+	}
+	.main {
+		max-width:100%;
+		background: url(images/GameOver.png);
+		height: auto;
+	}
+
+	header {
+		border-bottom: 1px solid #ccc;
+	}
+
+	.intro{
+	    font-size: 10px;
+	}
+	.date{
+		font-size: 12px;
+	}
+	.displayquestions p input {
+	    width: 200px;	
+	}
+.scoreBlock{
+	    font-size: 12px;
+}
+	.startSection {
+	    margin-top: 60px;
+	    text-align: left;
+	    margin-left: 45px;
+	}
+	.buttons{
+    width: 100px;
+    font-size: 13px;
+    margin-left: 2px;
+	}
+	.displayquestions ul label {
+    max-width: 200px;
+	}
+	.buttonContainer{
+		margin-top: 20px;
+	}
+	footer{
+		font-size: 10px;
+		bottom: 0px;
+	}
+
+}
